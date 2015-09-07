@@ -1,0 +1,25 @@
+﻿@model Grove.PaypalIntegration.Models.PaymentCompleteModel
+
+@{
+    ViewBag.Title = "title";
+    
+}
+
+<h2>Your order is complete</h2>
+
+<table>
+    
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Item</td>
+        <td>@Model.Item.</td>
+    </tr>
+    <tr>
+        <td>Amount</td>
+        <td>@Model.Amount (@Model.Currency)</td>
+    </tr>
+
+</table>
